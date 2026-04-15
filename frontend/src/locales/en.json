@@ -464,7 +464,7 @@
     "reservation": "Reservation",
     "flight": "Flight",
     "route": "Route",
-    "my_locations": "My Locationss",
+    "my_locations": "My Locationsss",
     "no_linkable_locations": "No locations found that can be linked to this collection.",
     "all_locations_already_linked": "All locations are already linked to this collection.",
     "transportation_gpx_tip": "Upload GPX files here to have them displayed on the map",
@@ -1033,7 +1033,7 @@
   "locations": {
     "location": "Location",
     "locations": "Locations",
-    "my_locations": "My Locationss",
+    "my_locations": "My Locationsss",
     "best_happened_at": "Best happened at"
   },
   "settings_download_backup": "Download Backup",
