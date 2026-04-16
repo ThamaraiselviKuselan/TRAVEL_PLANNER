@@ -25,7 +25,7 @@ RUN npm install -g pnpm
 COPY package.json pnpm-lock.yaml* ./
 
 # Clean install all node modules using pnpm with frozen lockfile
-RUN pnpm install --no-frozen-lockfile
+RUN pnpm install --no-frozen-lockfile --prefer-offline --ignore-scripts
 
 # Copy the rest of the application files
 COPY . .
@@ -34,7 +34,8 @@ COPY . .
 RUN rm -f .env
 
 # Build SvelteKit app
-RUN pnpm run build
+#RUN pnpm run build
+RUN NODE_OPTIONS="--max-old-space-size=2048" pnpm run build
 
 # Make startup script executable
 RUN chmod +x ./startup.sh
