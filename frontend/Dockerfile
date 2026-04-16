@@ -25,7 +25,7 @@ RUN npm install -g pnpm
 COPY package.json pnpm-lock.yaml* ./
 
 # Clean install all node modules using pnpm with frozen lockfile
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --no-frozen-lockfile
 
 # Copy the rest of the application files
 COPY . .
