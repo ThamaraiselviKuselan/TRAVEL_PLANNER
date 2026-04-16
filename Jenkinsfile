@@ -5,7 +5,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh """
-                    ssh -o StrictHostKeyChecking=no ubuntu@15.135.219.82 '
+                    ssh -o StrictHostKeyChecking=no ubuntu@3.106.126.166 '
                         cd /home/ubuntu/TRAVEL_PLANNER &&
                         git pull origin main &&
                         sudo docker-compose down &&
